@@ -1,3 +1,16 @@
+<<<<<<< HEAD
 _config.yml
 _site/*
 *Thumbs.db
+=======
+_site/*
+_theme_packages/*
+
+Thumbs.db
+.DS_Store
+
+!.gitkeep
+
+.rbenv-version
+.rvmrc
+>>>>>>> 2c48f52eba6960bdfffc93ab0dc51ff0e89cba85
