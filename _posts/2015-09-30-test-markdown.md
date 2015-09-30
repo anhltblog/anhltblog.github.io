@@ -11,4 +11,4 @@ comments: true
 
 _I love Markdown._
 
-[Return home](www.anhltblog.github.io)
+[Return home](http://anhltblog.github.io/)
