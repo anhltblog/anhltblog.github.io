@@ -2,9 +2,9 @@
 layout: post
 title: Test Markdown
 categories: [demo]
-tag: [demo]
+tags: [demo]
 fullview: true
-comment: true
+comments: true
 ---
 
 **Markdown** is awesome.
