@@ -3,7 +3,7 @@ layout: post
 title: Root-me Web Server - Write-ups!
 categories: [CTF]
 tags: [Root-me]
-fullview: true
+fullview: false
 comments: true
 ---
 
