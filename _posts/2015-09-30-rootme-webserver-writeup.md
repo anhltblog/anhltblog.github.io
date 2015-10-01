@@ -12,6 +12,11 @@ Bẵng đi một thời gian (khá lâu, khoảng 2 năm) không đụng gì đ�
 Tôi sẽ bắt đầu với các challenges về _Web Server_.
 
 ###1. HTML
+**Link:** [http://challenge01.root-me.org/web-serveur/ch1/](http://challenge01.root-me.org/web-serveur/ch1/)
+
+View source code (nhớ kéo sang bên phải). Chả có gì thú vị cả :disappointed:
+
+**Flag:** _nZ^&@q5&sjJHev0_
 
 ###2. Weak Password
 
