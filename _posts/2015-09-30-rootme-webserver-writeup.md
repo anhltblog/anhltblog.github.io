@@ -26,8 +26,18 @@ username: admin, password: admin --> :sob:
 **Flag:** _admin_
 
 ###3. User-agent
+**Link:** [http://challenge01.root-me.org/web-serveur/ch2/](http://challenge01.root-me.org/web-serveur/ch2/)
+
+Nhìn tên đề bài + gợi ý, đổi user-agent thành admin --> xong.
+
+**Flag:** _rr$Li9%L34qd1AAe27_
 
 ###4. Backup file
+**Link:** [http://challenge01.root-me.org/web-serveur/ch11/](http://challenge01.root-me.org/web-serveur/ch11/)
+
+Truy cập đến _http://challenge01.root-me.org/web-serveur/ch11/index.php~_
+
+**Flag:** _OCCY9AcNm1tj_
 
 ###5. HTTP directory indexing
 
