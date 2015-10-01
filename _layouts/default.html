@@ -6,6 +6,14 @@ theme :
 
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
+---
+theme :
+  name : dbyll
+---
+{% include default.html %}
+
+{% if site.google_analytics %}
+<!-- Asynchronous Google Analytics snippet -->
 <script>
   var _gaq = _gaq || [];
   var pluginUrl =
