@@ -20,8 +20,11 @@ View source code (nhớ kéo sang bên phải). Chả có gì thú vị cả :di
 
 ###2. Weak Password
 **Link:** [http://challenge01.root-me.org/web-serveur/ch3/](http://challenge01.root-me.org/web-serveur/ch3/)
+
 username: admin, password: admin --> :sob:
+
 **Flag:** _admin_
+
 ###3. User-agent
 
 ###4. Backup file
