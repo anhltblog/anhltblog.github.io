@@ -6,21 +6,12 @@ theme :
 
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
----
-theme :
-  name : dbyll
----
-{% include default.html %}
-
-{% if site.google_analytics %}
-<!-- Asynchronous Google Analytics snippet -->
 <script>
   var _gaq = _gaq || [];
   var pluginUrl =
  '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
   _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
   _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-  _gaq.push(['_setDomainName','github.io']);
   _gaq.push(['_trackPageview']);
 
   (function() {
@@ -29,5 +20,4 @@ theme :
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
-{% endif %}
 {% endif %}
