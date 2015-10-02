@@ -89,13 +89,47 @@ Bài này yêu cầu bypass form login. Để ý _Authentication log_, có hai d
 
 ###11. File upload - double extensions
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch20/](http://challenge01.root-me.org/web-serveur/ch20/)
+
+Bài này là double extensions, và mục tiêu là upload được file php lên server. Công việc đơn giản chỉ là tạo ra một file php, sau đó lưu dưới dạng .png, chẳng hạn _kid.php.png_, rồi gửi lên server, truy cập đến file vừa upload --> lấy flag.
+
+**Flag:** _PV1OejHY4MxfsC2mHpRz9_
+
 ###12. File upload - MIME type
+
+**Link:** [http://challenge01.root-me.org/web-serveur/ch21/](http://challenge01.root-me.org/web-serveur/ch21/)
+
+Tương tự bài bên trên, chỉ có điều, lần này đổi Content-type gửi lên, từ _application/octet-stream_ thành _image/jpeg_.
+
+**Flag:** _UN2YusYPnmwfHFHI5zj3_
 
 ###13. HTTP cookies
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch21/](http://challenge01.root-me.org/web-serveur/ch21/)
+
+Bài này chỉ việc sửa cookie thành _admin_ là xong.
+
+**Flag:** _ml-SYMPA_
+
 ###14. Directory traversal
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch15/ch15.php](http://challenge01.root-me.org/web-serveur/ch15/ch15.php)
+
+Truy cập đến URL trên, click vào một tab, chẳng hạn _actions_.
+
+Để ý đến URL: _http://challenge01.root-me.org/web-serveur/ch15/ch15.php?galerie=actions_
+
+Thử đổi _galerie=./_, mình thấy có một thư mục ẩn là _86hwnX2r_. Thử đổi tiếp _galerie=86hwnX2r_ xem sao. Thấy có file _password.txt_. Hê hê, đọc file này thôi :D
+
+**Flag:** _kcb$!Bx@v4Gs9Ez_
+
 ###15. File upload - null byte
+
+**Link:** [http://challenge01.root-me.org/web-serveur/ch22/](http://challenge01.root-me.org/web-serveur/ch22/)
+
+Cái tên nói lên tất cả, chỉ cần sửa tên file thành _kid.php%00.png_ là xong.
+
+**Flag:** _YPNchi2NmTwygr2dgCCF_
 
 ###16. PHP filters
 
