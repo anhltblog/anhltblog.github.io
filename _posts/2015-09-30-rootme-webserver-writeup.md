@@ -41,9 +41,27 @@ Truy cập đến _http://challenge01.root-me.org/web-serveur/ch11/index.php~_
 
 ###5. HTTP directory indexing
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch4/](http://challenge01.root-me.org/web-serveur/ch4/)
+
+Cứ là theo gợi ý thôi: _Ctrl + U_ --> _thấy thư mục admin, thử truy cập thư mục admin_ --> _phát hiện thư mục backup, thử truy cập backup_ --> _thấy file admin.txt_ --> _Flag nằm trong này_
+
+**Flag:** _LINUX_
+
 ###6. HTTP Headers
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch5/](http://challenge01.root-me.org/web-serveur/ch5/)
+
+Dùng LiveHTTP headers xem thử, thấy response trả về có _Header-RootMe-Admin: none_. Thử request lại và thêm trường này vào header thì lòi ra flag.
+
+**Flag:** _HeadersMayBeUseful_
+
 ###7. HTTP verb tampering
+
+**Link:** [http://challenge01.root-me.org/web-serveur/ch8/](http://challenge01.root-me.org/web-serveur/ch8/)
+
+Cho đi qua Burp Suite, thay đổi request method thành bất cứ method nào trừ GET và POST. Hết!
+
+**Flag:** _a23e$dme96d3saez$$prap_
 
 ###8. Install files
 
