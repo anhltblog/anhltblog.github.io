@@ -83,7 +83,7 @@ Truy cập đến URL trên thì bị redirect về trang login.php. Dùng addon
 
 **Link:** [http://challenge01.root-me.org/web-serveur/ch14/](http://challenge01.root-me.org/web-serveur/ch14/)
 
-Bài này yêu cầu bypass form login. Để ý _Authentication log_, có hai dòng _admin failed to authenticate._ và _admin authenticated._. Có thể ngầm hiểu là đăng nhập thất bại và thành công. Sau vài lần thử thất bại, mình thấy log cứ dài ra, toàn là _<username> failed to authenticate_. _xxx_
+Bài này yêu cầu bypass form login. Để ý _Authentication log_, có hai dòng _admin failed to authenticate._ và _admin authenticated._. Có thể ngầm hiểu là đăng nhập thất bại và thành công. Sau vài lần thử thất bại, mình thấy log cứ dài ra, toàn là _<username> failed to authenticate_. 
 
 **Flag:** _rFSP&G0p&5uAg1%_
 
