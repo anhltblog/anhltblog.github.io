@@ -65,9 +65,27 @@ Cho đi qua Burp Suite, thay đổi request method thành bất cứ method nào
 
 ###8. Install files
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch6](http://challenge01.root-me.org/web-serveur/ch6)
+
+View source code, phát hiện đường dẫn /web-serveur/ch6/phpbb/. Truy cập đến thì trằng trơn, chả có gì. Đề bài là Install files và có thêm gợi ý _You know phpBB ?_ --> đi tìm đường dẫn đến file install của phpBB (là _install/install.php_). Flag nằm trong file này.
+
+**Flag:** _karambar_
+
 ###9. Improper redirect
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch32/](http://challenge01.root-me.org/web-serveur/ch32/)
+
+Truy cập đến URL trên thì bị redirect về trang login.php. Dùng addon NoRedirect của FireFox để chặn redirect, sau đó request lại, được flag.
+
+**Flag:** _ExecutionAfterRedirectIsBad_
+
 ###10. CRLF
+
+**Link:** [http://challenge01.root-me.org/web-serveur/ch14/](http://challenge01.root-me.org/web-serveur/ch14/)
+
+Bài này yêu cầu bypass form login. Để ý _Authentication log_, có hai dòng _admin failed to authenticate._ và _admin authenticated._. Có thể ngầm hiểu là đăng nhập thất bại và thành công. Sau vài lần thử thất bại, mình thấy log cứ dài ra, toàn là _<username> failed to authenticate_. Ngẫm một lúc, mình suy đoán logic ở đây có thể như sau: sau khi người dùng gửi request lên, server sẽ check thông tin và ghi vào log, sau đó check lại log, nếu có _xxx authenticated._ thì đưa ra flag. Do đó, mình thử nhập username là _abc authenticated.%0d%0aguest_ --> Done! :D
+
+**Flag:** _rFSP&G0p&5uAg1%_
 
 ###11. File upload - double extensions
 
