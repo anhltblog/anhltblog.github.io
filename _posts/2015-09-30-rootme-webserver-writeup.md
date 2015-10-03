@@ -149,6 +149,34 @@ Hê hê, ra một đoạn base64, decode base64 thì lại phát hiện ra một
 
 ###17. PHP register globals
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch17/](http://challenge01.root-me.org/web-serveur/ch17/)
+
+Bài này là PHP register globlas. Tớ đi google trước cho đỡ bỡ ngỡ (_ _!)
+
+Khi register_globals được enabled, PHP sẽ tự động tạo biến global cho tất cả các giá trị truyền qua GET, POST hay COOKIE. Thử tưởng tượng, điều gì sẽ xảy ra nếu server có sử dụng biến _SESSION['xxx'] và tớ lại truyền một biến _SESSION['xxx'] lên server? :v :v :v
+
+Ở đây, có một gợi ý là _"It seems that the developper often leaves backup files around..."_, vậy đi tìm file backup thôi. Sau  một phút mò mẫm thì tớ tìm được file _index.php.bak_. Đây là một phần nội dung của file này:
+
+'''
+function auth($password, $hidden_password){
+    $res=0;
+    if (isset($password) && $password!=""){
+        if ( $password == $hidden_password ){
+            $res=1;
+        }
+    }
+    $_SESSION["logged"]=$res;
+    return $res;
+}
+'''
+
+Đến đây, có những 2 cách để đến được đích:
+
+1. Gửi lên hai biến password và hidden_password có giá trị giống nhau.
+2. Gửi lên biến _SESSION["logged"]=1.
+
+**Flag:** _NoiQYdpcd5kgNwG_
+
 ###18. Local File Inclusion
 
 ###19. SQL Injection - authentication
