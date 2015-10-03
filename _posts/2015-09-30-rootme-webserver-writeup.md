@@ -158,6 +158,7 @@ Khi register_globals được enabled, PHP sẽ tự động tạo biến global
 Ở đây, có một gợi ý là _"It seems that the developper often leaves backup files around..."_, vậy đi tìm file backup thôi. Sau  một phút mò mẫm thì tớ tìm được file _index.php.bak_. Đây là một phần nội dung của file này:
 
 '''
+
 function auth($password, $hidden_password){
     $res=0;
     if (isset($password) && $password!=""){
@@ -168,6 +169,7 @@ function auth($password, $hidden_password){
     $_SESSION["logged"]=$res;
     return $res;
 }
+
 '''
 
 Đến đây, có những 2 cách để đến được đích:
