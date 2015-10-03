@@ -159,14 +159,23 @@ Khi register_globals được enabled, PHP sẽ tự động tạo biến global
 
 ```
 function auth($password, $hidden_password){
+
     $res=0;
+    
     if (isset($password) && $password!=""){
+    
         if ( $password == $hidden_password ){
+        
             $res=1;
+            
         }
+        
     }
+    
     $_SESSION["logged"]=$res;
+    
     return $res;
+    
 }
 ```
 
