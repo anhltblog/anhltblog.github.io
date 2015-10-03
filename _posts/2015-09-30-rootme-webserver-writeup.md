@@ -158,11 +158,14 @@ Khi register_globals được enabled, PHP sẽ tự động tạo biến global
 Ở đây, có một gợi ý là _"It seems that the developper often leaves backup files around..."_, vậy đi tìm file backup thôi. Sau  một phút mò mẫm thì tớ tìm được file _index.php.bak_. Đây là một phần nội dung của file này:
 
 ```
-
 if ( isset($_POST["username"]) && isset($_POST["password"]) ){
-
     if ($_POST["username"]==$username && $_POST["password"]==$password){
-    
+      print("<h2>Welcome back !</h2>");
+      print("To validate the challenge use this password<br/><br/>");
+    } else {
+      print("<h3>Error : no such user/password</h2><br />");
+    }
+} else {
 ```
 
 Đến đây, có những 2 cách để đến được đích:
