@@ -160,18 +160,6 @@ Khi register_globals được enabled, PHP sẽ tự động tạo biến global
 ```
 if ( isset($_POST["username"]) && isset($_POST["password"]) ){
 
-  if ($_POST["username"]==$username && $_POST["password"]==$password){
-  
-    print("<h2>Welcome back !</h2>");
-    
-    print("To validate the challenge use this password<br/><br/>");
-  
-  } else {
-  
-    print("<h3>Error : no such user/password</h2><br />");
-  
-  }
-
 }
 ```
 
