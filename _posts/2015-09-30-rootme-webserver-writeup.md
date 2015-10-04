@@ -216,7 +216,19 @@ Payload: _recherche=1' union select password,2 from users where username='admin'
 
 **Link:** [http://challenge01.root-me.org/web-serveur/ch25/](http://challenge01.root-me.org/web-serveur/ch25/)
 
+Nếu ai chưa biết LDAP và LDAP Injection là gì thì nên đọc 2 bài này:
 
+[https://www.blackhat.com/presentations/bh-europe-08/Alonso-Parada/Whitepaper/bh-eu-08-alonso-parada-WP.pdf](https://www.blackhat.com/presentations/bh-europe-08/Alonso-Parada/Whitepaper/bh-eu-08-alonso-parada-WP.pdf)
+
+[https://www.owasp.org/index.php/Testing_for_LDAP_Injection_(OTG-INPVAL-006)](https://www.owasp.org/index.php/Testing_for_LDAP_Injection_(OTG-INPVAL-006))
+
+Tớ thử điền ký tự _)_ vào username và 1 vào password thì bắn ra lỗi: _ERROR : Invalid LDAP syntax : (&(uid=))(userPassword=1))_
+
+Đến đây, chỉ việc điền thông tin làm sao cho câu truy vấn trên luôn luôn đúng là ok.
+
+Payload: _username=*)(|(uid=*&password=1)_
+
+**Flag:** _SWRwehpkTI3Vu2F9DoTJJ0LBO_
 
 ###22. NoSQL Injection - authentication
 
