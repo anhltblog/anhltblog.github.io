@@ -282,6 +282,36 @@ Có thể các bạn sẽ hỏi kid/../admin.html làm gì có đâu, tại sao 
 
 ###24. PHP Serialization
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch28/](http://challenge01.root-me.org/web-serveur/ch28/)
+
+Nói một chút về 2 hàm serialize() và unserialize() trong PHP. Serialize() là hàm sinh một biểu diễn có thể lưu trữ được của một giá trị, còn unserialize() là hàm làm công việc ngược lại, tạo một chuỗi đã được serialized thành một giá trị PHP.
+
+Đề bài có cho source code. Khi đọc thì tớ thấy có đoạn như sau:
+
+```php
+    else if($_COOKIE['autologin']){
+        $data = unserialize($_COOKIE['autologin']);
+        $autologin = "autologin";
+    }
+```
+
+Cookie gửi lên server là một chuỗi serialized. Khi unserialize ngược trở lại thì được một mảng chứa login và password. Sau đó, các thông tin này sẽ được đi qua hàm check:
+
+```php
+    // check password !
+    if ($data['password'] == $auth[ $data['login'] ] ) {
+```
+
+Đoạn code này sử dụng toán tử _==_ để so sánh. Toán tử này chỉ check giá trị và bỏ qua kiểu dữ liệu. Do đó, ta có thể lợi dụng để gửi password lên với kiểu boolean, như vậy thì đoạn check trên luôn đúng ;)
+
+Tớ dùng addon _Cookies Manager+_ để thêm một biến autologin vào:
+
+_a%3A2%3A%7Bs%3A5%3A%22login%22%3Bs%3A10%3A%22superadmin%22%3Bs%3A8%3A%22password%22%3Bb%3A1%3B%7D_ (đã đi qua hàm urlencode).
+
+Sau đó reload lại và nhận flag :D
+
+**Flag:** _NoUserInputInPHPSerialization!_
+
 ###25. SQL Injection - numeric
 
 ###26. SQL Truncation
