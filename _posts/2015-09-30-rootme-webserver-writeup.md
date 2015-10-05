@@ -232,7 +232,53 @@ Payload: _username=*)(|(uid=*&password=1)_
 
 ###22. NoSQL Injection - authentication
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch38/](http://challenge01.root-me.org/web-serveur/ch38/)
+
+Bài này yêu cầu khai thác lỗi NoSQL Injection. Các bạn có thể google để biết thêm chi tiết về lỗi này. Ở bài này, tớ sẽ chèn thêm vào một số toán tử MongoDB để thay đổi cấu trúc câu truy vấn.
+
+Đầu tiên, thử: _login[$ne]=xxx&pass[$ne]=yyy_
+
+Có nghĩa là lấy ra user thỏa mãn login != xxx và pass != yyy. Ta được user _admin_. Nhưng nhập admin vào thì không phải flag. Tiếp tục:
+
+_login[$ne]=admin&pass[$ne]=yyy_
+
+Lại được thêm một user nữa là _test_. Tuy nhiên vẫn không đúng user cần tìm. Đảo qua đảo lại vẫn chỉ mò được admin và test. Làm thế nào đây?
+
+Suy nghĩ một tẹo thì tớ nghĩ ra cách gửi lên nhiều biến login để xác định vị trí tương đối của user cần tìm (so với admin và test):
+
+_login[$gt]=admin&login[$lt]=test&pass[$ne]=yyy_
+
+Ra luôn flag, hehe.
+
+**Flag:** _nosqli_no_secret_4_you_
+
 ###23. Path Truncation
+
+**Link:** [http://challenge01.root-me.org/web-serveur/ch35/](http://challenge01.root-me.org/web-serveur/ch35/)
+
+Tớ tìm kiếm một tẹo thì phát hiện bài này có 3 file: index.php, home.php và admin.html. Có lẽ mục tiêu của chúng ta là đọc được file admin.html. Nhưng đọc thế nào đây khi code đã fix cứng đuôi file là _.php_? Thì tìm ngắt cái đuôi .php đi và thay bằng đuôi .html là xong, đơn giản =))
+
+Đến đây lại có một câu hỏi nữa: làm thế nào để ngắt được đuôi .php? Trước khi làm bài này, tớ chỉ biết mỗi cách thêm _%00_ để ngắt đoạn đằng sau, nhưng trong trường hợp này thì không được. Phải dùng Google thần chương thôi :D
+
+Sau một hồi mò mẫm, vớ được 2 bài blog này (có thời gian tớ sẽ dịch ra sau):
+
+[http://www.ush.it/2009/02/08/php-filesystem-attack-vectors/](http://www.ush.it/2009/02/08/php-filesystem-attack-vectors/)
+
+[https://websec.wordpress.com/tag/lfi/](https://websec.wordpress.com/tag/lfi/)
+
+Đại ý nó là như này:
+
+- PHP coi kid.php, kid.php/., kid.php/././. đều là kid.php, do đó, ta có thể thêm đằng sau bao nhiêu ký tự /. cũng được.
+
+- PHP sẽ ngầm truncate tên file nếu như nó có độ dài lớn hơn 4096 ký tự --> có thể điền nhiều _/._ (nhiều hơn 4096) để ngắt đuôi .php đi.
+
+Tớ gửi lên payload: _page=kid/../admin.html/././.[thêm 4096 lần /. nữa]/./._
+
+Có ngay flag, hihi :3
+
+Có thể các bạn sẽ hỏi kid/../admin.html làm gì có đâu, tại sao vẫn thực thi được? Tớ cũng chưa biết tại sao, cứ note lại đây để lần khác tìm hiểu và bổ sung sau :v :v :v
+
+**Flag:** _110V3TrUnC4T10n_
 
 ###24. PHP Serialization
 
