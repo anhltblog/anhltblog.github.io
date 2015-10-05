@@ -314,6 +314,12 @@ Sau đó reload lại và nhận flag :D
 
 ###25. SQL Injection - numeric
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch18/](http://challenge01.root-me.org/web-serveur/ch18/)
+
+Một bài SQL Injection siêu đơn giản :D
+
+**Flag:** _aTlkJYLjcbLmue3_
+
 ###26. SQL Truncation
 
 ###27. XML External Entity
