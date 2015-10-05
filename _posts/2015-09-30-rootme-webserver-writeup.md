@@ -258,7 +258,7 @@ Ra luôn flag, hehe.
 
 Tớ tìm kiếm một tẹo thì phát hiện bài này có 3 file: index.php, home.php và admin.html. Có lẽ mục tiêu của chúng ta là đọc được file admin.html. Nhưng đọc thế nào đây khi code đã fix cứng đuôi file là _.php_? Thì tìm ngắt cái đuôi .php đi và thay bằng đuôi .html là xong, đơn giản =))
 
-Đến đây lại có một câu hỏi nữa: làm thế nào để ngắt được đuôi .php? Trước khi làm bài này, tớ chỉ biết mỗi cách thêm _%00_ để ngắt đoạn đằng sau, nhưng trong trường hợp này thì không được. Phải dùng Google thần chương thôi :D
+Đến đây lại có một câu hỏi nữa: làm thế nào để ngắt được đuôi .php? Trước khi làm bài này, tớ chỉ biết mỗi cách thêm _%00_ để ngắt đoạn đằng sau, nhưng không áp dụng được ở đây. Phải dùng Google thần chương thôi :D
 
 Sau một hồi mò mẫm, vớ được 2 bài blog này (có thời gian tớ sẽ dịch ra sau):
 
@@ -266,7 +266,7 @@ Sau một hồi mò mẫm, vớ được 2 bài blog này (có thời gian tớ 
 
 [https://websec.wordpress.com/tag/lfi/](https://websec.wordpress.com/tag/lfi/)
 
-Đại ý nó là như này:
+Đại ý như sau:
 
 - PHP coi kid.php, kid.php/., kid.php/././. đều là kid.php, do đó, ta có thể thêm đằng sau bao nhiêu ký tự /. cũng được.
 
