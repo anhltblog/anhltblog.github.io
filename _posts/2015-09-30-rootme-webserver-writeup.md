@@ -304,9 +304,11 @@ Cookie gửi lên server là một chuỗi serialized. Khi unserialize ngược 
 
 Đoạn code này sử dụng toán tử _==_ để so sánh. Toán tử này chỉ check giá trị và bỏ qua kiểu dữ liệu. Do đó, ta có thể lợi dụng để gửi password lên với kiểu boolean, như vậy thì đoạn check trên luôn đúng ;)
 
-Tớ dùng addon _Cookies Manager+_ để thêm một biến autologin vào:
+Tớ dùng addon _Cookies Manager+_ để thêm một biến autologin vào (đã đi qua hàm urlencode):
 
-_a%3A2%3A%7Bs%3A5%3A%22login%22%3Bs%3A10%3A%22superadmin%22%3Bs%3A8%3A%22password%22%3Bb%3A1%3B%7D_ (đã đi qua hàm urlencode).
+```
+_a%3A2%3A%7Bs%3A5%3A%22login%22%3Bs%3A10%3A%22superadmin%22%3Bs%3A8%3A%22password%22%3Bb%3A1%3B%7D_
+```
 
 Sau đó reload lại và nhận flag :D
 
