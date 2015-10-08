@@ -324,6 +324,14 @@ Một bài SQL Injection siêu đơn giản :D
 
 ###26. SQL Truncation
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch36/](http://challenge01.root-me.org/web-serveur/ch36/)
+
+Để làm được bài này, phải tìm hiểu lỗi SQL Truncation trước, các bạn có thể google để hiểu rõ hơn. Đại ý là lỗi này cho phép bạn đăng nhập website bằng bất kỳ username nào với mật khẩu do bạn tạo ra, nghe thú vị không? :v
+
+Ví dụ, độ dài của cột username là 20, khi bạn insert một input lớn hơn 20 ký tự, thì SQL sẽ tự động truncate các ký tự thừa, và chỉ lưu 20 ký tự đầu mà thôi. Chính vì thế, nếu bạn đăng ký một tài khoản "admin               a", thì SQL sẽ lưu là "admin               ". Đến đây, bạn có thể đăng nhập với tài khoản admin và mật khẩu do bạn tạo ra :D
+
+**Flag:** _J41m3Qu4nD54Tr0nc_
+
 ###27. XML External Entity
 
 ###28. XPath Injection - authentication
