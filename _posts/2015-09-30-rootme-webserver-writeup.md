@@ -340,8 +340,7 @@ Bài này đề cập đến lỗi XXE. Chi tiết về XXE, tớ sẽ viết tr
 
 Quay trở lại đề bài. Tớ thấy có 2 page: checker và login. Page checker cho phép nhập đường dẫn RSS. Thử cho rss của vnexpress.net vào xem sao :D
 
-{: .center}
-![](https://farm1.staticflickr.com/690/21433671473_6c72458617_m.jpg)
+![](https://farm1.staticflickr.com/690/21433671473_6c72458617_m.jpg){: .center-image }
 
 ###28. XPath Injection - authentication
 
