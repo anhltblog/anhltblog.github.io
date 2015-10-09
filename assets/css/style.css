@@ -184,11 +184,8 @@ ul.dropdown-menu>li>a>i.fa {
 }
 
 /* Style for image */
-.image-wrapper {
-    text-align: center;
-
-    .image-caption {
-        color: $grey-color;
-        margin-top: $spacing-unit / 3;
-    }
+.center-image
+{
+    margin: 0 auto;
+    display: block;
 }
