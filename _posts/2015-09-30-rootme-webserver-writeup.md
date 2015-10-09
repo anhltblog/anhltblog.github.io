@@ -363,6 +363,13 @@ Sau đó, nhét link này vào cho nó parse. Đến đây, tớ được nội 
 
 ###28. XPath Injection - authentication
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch23/](http://challenge01.root-me.org/web-serveur/ch23/)
+
+Đây là một bài XPath Injection rất đơn giản.
+Payload: _username=John&password=xxx' or username='John_
+
+**Flag:** _6FkC67ui8njEepIK5Gr2Kwe_
+
 ###29. SQL Injection - Error
 
 ###30. SQL Injection - Insert
