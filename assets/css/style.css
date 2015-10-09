@@ -183,3 +183,12 @@ ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
 
+/* Style for image */
+.image-wrapper {
+    text-align: center;
+
+    .image-caption {
+        color: $grey-color;
+        margin-top: $spacing-unit / 3;
+    }
+}
