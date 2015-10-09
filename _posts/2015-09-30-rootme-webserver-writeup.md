@@ -334,6 +334,14 @@ Ví dụ, độ dài của cột username là 20, khi bạn insert một input l
 
 ###27. XML External Entity
 
+**Link:** [http://challenge01.root-me.org/web-serveur/ch29/](http://challenge01.root-me.org/web-serveur/ch29/)
+
+Bài này đề cập đến lỗi XXE. Chi tiết về XXE, tớ sẽ viết trong một bài blog khác, ở đây tớ xin tóm tắt vài dòng như sau: XXE attack (XML external entity attack) là một loại lỗi được tìm thấy trong các ứng dụng web, có thể cho phép hacker đọc những file quan trọng trên server.
+
+Quay trở lại đề bài. Tớ thấy có 2 page: checker và login. Page checker cho phép nhập đường dẫn RSS. Thử cho rss của vnexpress.net vào xem sao :D
+
+https://cloud.githubusercontent.com/assets/5568988/10396678/fdda8498-6ecd-11e5-9c41-d6c396ebbd42.jpg
+
 ###28. XPath Injection - authentication
 
 ###29. SQL Injection - Error
