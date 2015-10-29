@@ -74,6 +74,7 @@ Nhiệm vụ ở bài này đơn giản chỉ là đọc file pcap, dòm TTL. Đ
 Bài này kết hợp khai thác LDAP null bind và null base.
 
 Sử dụng _ldapsearch_ (trên Linux):
+
 ```
 
 ldapsearch -x -h challenge01.root-me.org -p 54013 -b "ou=anonymous,dc=challenge01,dc=root-me,dc=org" "(objectclass=*)" "*" +
