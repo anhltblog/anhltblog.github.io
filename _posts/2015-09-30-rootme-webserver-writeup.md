@@ -5,6 +5,7 @@ categories: [CTF]
 tags: [Root-me]
 fullview: false
 comments: true
+date: 2015-10-29 14:40:45
 ---
 
 Bẵng đi một thời gian (khá lâu, khoảng 2 năm) không đụng gì đến CTF, hậu quả là hiện tại tôi thấy kỹ năng về hacking của mình kém ghê gớm (mặc dù trước đó cũng không khá khẩm gì rồi). Nghĩ đến tương lai u ám, đồng nghiệp hắt hủi, bạn bè xa lánh (vì không giỏi thì chúng nó không chơi, còn mình thì vì tự ti mặc cảm nên cũng không chơi nốt), tôi thấy cần phải rèn luyện để tăng skill, tìm lại ánh hào quang mà mình chưa bao giờ có :v
