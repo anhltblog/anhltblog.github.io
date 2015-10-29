@@ -49,3 +49,14 @@ Làm theo blog thì cũng được, nhưng vấn đề là tớ không tìm đư
 Sau khi crack được password của các user trên, tớ thấy chúng đều có tiền tố là **6sK0_**. Thử _6sK0\_enable_ thì ok luôn :D
 
 **Flag:** _6sK0\_enable_
+
+###6. DNS - zone transfert
+**Link:** [http://www.root-me.org/en/Challenges/Network/DNS-zone-transfert](http://www.root-me.org/en/Challenges/Network/DNS-zone-transfert)
+
+Tớ sử dụng lệnh _dig_ (trên Linux) để truy vấn đến DNS server.
+```
+dig @challenge01.root-me.org -p 54011 ch11.challenge01.root-me.org TXT
+```
+
+**Flag:** _CBkFRwfNMMtRjHY_
+
