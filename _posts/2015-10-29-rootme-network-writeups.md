@@ -60,3 +60,38 @@ dig @challenge01.root-me.org -p 54011 ch11.challenge01.root-me.org TXT
 
 **Flag:** _CBkFRwfNMMtRjHY_
 
+###7. IP - Time To Live
+**Link:** [http://challenge01.root-me.org/reseau/ch7/ch7.pcap](http://challenge01.root-me.org/reseau/ch7/ch7.pcap)
+
+Nhiệm vụ ở bài này đơn giản chỉ là đọc file pcap, dòm TTL. Đó chính là flag :D
+
+**Flag:** _13_
+
+###8. LDAP - null bind
+**Link:** [http://www.root-me.org/en/Challenges/Network/LDAP-null-bind](http://www.root-me.org/en/Challenges/Network/LDAP-null-bind)
+
+Bài này kết hợp khai thác LDAP null bind và null base.
+
+Sử dụng _ldapsearch_ (trên Linux):
+```
+
+ldapsearch -x   -W  -b'ou=anonymous,dc=challenge01,dc=root-me,dc=org'
+
+```
+
+**Flag:** _sabu@anonops.org_
+
+###9. SIP - authentication
+**Link:** [http://challenge01.root-me.org/reseau/ch4/ch4.txt](http://challenge01.root-me.org/reseau/ch4/ch4.txt)
+
+Đọc file txt ra luôn flag. Mất vui :(
+
+**Flag:** _1234_
+
+###10. ETHERNET - Patched transmission
+**Link:** [http://www.root-me.org/en/Challenges/Network/ETHERNET-Patched-transmission](http://www.root-me.org/en/Challenges/Network/ETHERNET-Patched-transmission)
+
+Đề bài cho 4 frame. Tớ sử dụng tool _text2pcap_ (có sẵn khi cài wireshark) để tạo file pcap từ file text chứa dữ liệu đề cho. Sau đó, dùng wireshark để xem thì phát hiện hai gói tin ping request 1 và 3 bị hỏng, chỉ có gói thứ 2 là đúng --> gói ping reply cần phục hồi chính là phản hồi của gói 2. Loay hoay một hồi thì cũng ra flag :v
+
+**Flag:** _f9f781003afadab00b81_
+
