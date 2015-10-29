@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Root-me Web Server - Write-ups!
+title: Root-me Network - Write-ups!
 categories: [CTF]
 tags: [Root-me]
 fullview: false
