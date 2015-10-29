@@ -57,11 +57,7 @@ Tiếp tục đọc file pcap lấy falg.
      0a 
 ```
 
-Tớ convert sang ASCII thì thấy có dòng này:
-
-```
-    Authorization: Basic Y29uZmk6ZGVudGlhbA==
-```
+Tớ convert sang ASCII thì thấy có một chuỗi base64: _Y29uZmk6ZGVudGlhbA==_
 
 Decode chuỗi base64 thì ra flag.
 
