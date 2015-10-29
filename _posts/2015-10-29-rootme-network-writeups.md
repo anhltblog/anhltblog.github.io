@@ -42,19 +42,17 @@ Tiếp tục đọc file pcap lấy falg.
      3a 20 77 77 77 2e 6d 79 69 70 76 36 2e 6f 72 67
      0d 0a 41 63 63 65 70 74 3a 20 2a 2f 2a 0d 0a 0d
      0a 
-
 ```
 
 Tớ convert sang ASCII thì được:
-```
 
+```
     s  ᩕٚǝ`    ۆ@&S  `*ܠ   ۞^ AРB3       ״ Pݪ}ؠ ⏠  
     >iٗ¾ԇET / HTTP/1.1
     Authorization: Basic Y29uZmk6ZGVudGlhbA==
     User-Agent: InsaneBrowser
     Host: www.myipv6.org
     Accept: */*
-
 ```
 
 Decode chuỗi base64 thì ra flag.
