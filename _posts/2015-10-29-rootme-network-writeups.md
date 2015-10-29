@@ -54,6 +54,7 @@ Sau khi crack được password của các user trên, tớ thấy chúng đều
 **Link:** [http://www.root-me.org/en/Challenges/Network/DNS-zone-transfert](http://www.root-me.org/en/Challenges/Network/DNS-zone-transfert)
 
 Tớ sử dụng lệnh _dig_ (trên Linux) để truy vấn đến DNS server.
+
 ```
 dig @challenge01.root-me.org -p 54011 ch11.challenge01.root-me.org TXT
 ```
