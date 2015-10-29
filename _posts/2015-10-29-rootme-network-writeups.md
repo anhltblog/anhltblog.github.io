@@ -57,15 +57,10 @@ Tiếp tục đọc file pcap lấy falg.
      0a 
 ```
 
-Tớ convert sang ASCII thì được:
+Tớ convert sang ASCII thì thấy có dòng này:
 
 ```
-    s  ᩕٚǝ`    ۆ@&S  `*ܠ   ۞^ AРB3       ״ Pݪ}ؠ ⏠  
-    >iٗ¾ԇET / HTTP/1.1
     Authorization: Basic Y29uZmk6ZGVudGlhbA==
-    User-Agent: InsaneBrowser
-    Host: www.myipv6.org
-    Accept: */*
 ```
 
 Decode chuỗi base64 thì ra flag.
