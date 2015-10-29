@@ -71,7 +71,7 @@ Nhiệm vụ ở bài này đơn giản chỉ là đọc file pcap, dòm TTL. Đ
 ###8. LDAP - null bind
 **Link:** [http://www.root-me.org/en/Challenges/Network/LDAP-null-bind](http://www.root-me.org/en/Challenges/Network/LDAP-null-bind)
 
-Bài này kết hợp khai thác LDAP null bind và null base.
+Bài này khai thác LDAP null bind (truy vấn đến server LDAP không cần mật khẩu).
 
 Sử dụng _ldapsearch_ (trên Linux):
 
