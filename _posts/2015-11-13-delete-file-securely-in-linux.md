@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Delete file securely in Linux
+title: Xóa file vĩnh viễn trong Linux
 categories: [Linux]
 tags: [Linux]
 fullview: false
