@@ -7,9 +7,9 @@ fullview: false
 comments: true
 ---
 
-Bẵng đi một thời gian (khá lâu, khoảng 2 năm) không đụng gì đến CTF, hậu quả là hiện tại tôi thấy kỹ năng về hacking của mình kém ghê gớm (mặc dù trước đó cũng không khá khẩm gì rồi). Nghĩ đến tương lai u ám, đồng nghiệp hắt hủi, bạn bè xa lánh (vì không giỏi thì chúng nó không chơi, còn mình thì vì tự ti mặc cảm nên cũng không chơi nốt), tôi thấy cần phải rèn luyện để tăng skill, tìm lại ánh hào quang mà mình chưa bao giờ có :v
+Bẵng đi một thời gian (khá lâu, khoảng 2 năm) không đụng gì đến CTF, hậu quả là hiện tại tớ thấy kỹ năng về hacking của mình kém ghê gớm (mặc dù trước đó cũng không khá khẩm gì rồi). Nghĩ đến tương lai u ám, đồng nghiệp hắt hủi, bạn bè xa lánh (vì không giỏi thì chúng nó không chơi, còn mình thì vì tự ti mặc cảm nên cũng không chơi nốt), tớ thấy cần phải rèn luyện để tăng skill, tìm lại ánh hào quang mà mình chưa bao giờ có :v
 
-Tôi sẽ bắt đầu với các challenges về _Web Server_.
+Tớ sẽ bắt đầu với các challenges về _Web Server_.
 
 ###1. HTML
 **Link:** [http://challenge01.root-me.org/web-serveur/ch1/](http://challenge01.root-me.org/web-serveur/ch1/)
@@ -43,7 +43,7 @@ Truy cập đến _http://challenge01.root-me.org/web-serveur/ch11/index.php~_
 
 **Link:** [http://challenge01.root-me.org/web-serveur/ch4/](http://challenge01.root-me.org/web-serveur/ch4/)
 
-Cứ là theo gợi ý thôi: _Ctrl + U_ --> _thấy thư mục admin, thử truy cập thư mục admin_ --> _phát hiện thư mục backup, thử truy cập backup_ --> _thấy file admin.txt_ --> _Flag nằm trong này_
+Cứ làm theo gợi ý thôi: _Ctrl + U_ --> _thấy thư mục admin, thử truy cập thư mục admin_ --> _phát hiện thư mục backup, thử truy cập backup_ --> _thấy file admin.txt_ --> _Flag nằm trong này_
 
 **Flag:** _LINUX_
 
@@ -83,7 +83,7 @@ Truy cập đến URL trên thì bị redirect về trang login.php. Dùng addon
 
 **Link:** [http://challenge01.root-me.org/web-serveur/ch14/](http://challenge01.root-me.org/web-serveur/ch14/)
 
-Bài này yêu cầu bypass form login. Để ý _Authentication log_, có hai dòng _admin failed to authenticate._ và _admin authenticated._. Có thể ngầm hiểu là đăng nhập thất bại và thành công. Sau vài lần thử thất bại, mình thấy log cứ dài ra, toàn là _username failed to authenticate_. Ngẫm một lúc, mình suy đoán logic ở đây có thể như sau: sau khi người dùng gửi request lên, server sẽ check thông tin và ghi vào log, sau đó check lại log, nếu có _xxx authenticated._ thì đưa ra flag. Do đó, mình thử nhập username là _abc authenticated.%0d%0aguest_ --> Done! :D
+Bài này yêu cầu bypass form login. Để ý _Authentication log_, có hai dòng _admin failed to authenticate._ và _admin authenticated._. Có thể ngầm hiểu là đăng nhập thất bại và thành công. Sau vài lần thử thất bại, tớ thấy log cứ dài ra, toàn là _username failed to authenticate_. Ngẫm một lúc, tớ suy đoán logic ở đây có thể như sau: sau khi người dùng gửi request lên, server sẽ check thông tin và ghi vào log, sau đó check lại log, nếu có _xxx authenticated._ thì đưa ra flag. Do đó, tớ thử nhập username là _abc authenticated.%0d%0aguest_ --> Done! :D
 
 **Flag:** _rFSP&G0p&5uAg1%_
 
@@ -119,7 +119,7 @@ Truy cập đến URL trên, click vào một tab, chẳng hạn _actions_.
 
 Để ý đến URL: _http://challenge01.root-me.org/web-serveur/ch15/ch15.php?galerie=actions_
 
-Thử đổi _galerie=./_, mình thấy có một thư mục ẩn là _86hwnX2r_. Thử đổi tiếp _galerie=86hwnX2r_ xem sao. Thấy có file _password.txt_. Hê hê, đọc file này thôi :D
+Thử đổi _galerie=./_, tớ thấy có một thư mục ẩn là _86hwnX2r_. Thử đổi tiếp _galerie=86hwnX2r_ xem sao. Thấy có file _password.txt_. Hê hê, đọc file này thôi :D
 
 **Flag:** _kcb$!Bx@v4Gs9Ez_
 
