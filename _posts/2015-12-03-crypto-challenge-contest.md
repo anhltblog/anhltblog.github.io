@@ -12,6 +12,8 @@ Tớ đang luyện crypto trên trang [này](https://www.mysterytwisterc3.org/en
 
 ###Level 3: Number Sequence - Part 2
 
+Source: [https://www.mysterytwisterc3.org/images/challenges/mtc3-esslinger-14-zahlenfolge2-en.pdf](https://www.mysterytwisterc3.org/images/challenges/mtc3-esslinger-14-zahlenfolge2-en.pdf)
+
 What are the next two numbers in this sequence?
 
 ```
@@ -31,6 +33,8 @@ Nhìn một lát thì đây là dãy số nguyên tố * 5:
 ==> 2 số tiếp theo trong dãy sẽ là **145** (29\*5) và **155** (31\*5)
 
 
+###Level 4: Caesar Encryption
 
+Source: [https://www.mysterytwisterc3.org/images/challenges/mtc3-esslinger-05-caesar-en.pdf](https://www.mysterytwisterc3.org/images/challenges/mtc3-esslinger-05-caesar-en.pdf)
 
 
