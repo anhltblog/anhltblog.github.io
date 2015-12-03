@@ -28,7 +28,7 @@ Nhìn một lát thì đây là dãy số nguyên tố * 5:
 
 ```
 
-==> 2 số tiếp theo trong dãy sẽ là 145 (29*5) và 155 (31*5)
+==> 2 số tiếp theo trong dãy sẽ là **145** (29*5) và **155** (31*5)
 
 
 
