@@ -2,7 +2,7 @@
 layout: post
 title: Crypto Challenge Contest Write-ups
 categories: [Crypto]
-tags: [cvss]
+tags: [Crypto]
 fullview: false
 comments: true
 date: 2015-12-03 16:20:00
