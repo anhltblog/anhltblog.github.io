@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Beaver Code
-categories: [cryptography]
-tags: [crypto, transposition cipher]
+categories: [Cryptography]
+tags: [Crypto, Transposition Cipher]
 fullview: false
 comments: true
 date: 2015-12-16 13:30:00
