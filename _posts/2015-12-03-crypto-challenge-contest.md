@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Crypto Challenge Contest Write-ups
-categories: [Crypto]
+categories: [Cryptography]
 tags: [Crypto]
 fullview: false
 comments: true
