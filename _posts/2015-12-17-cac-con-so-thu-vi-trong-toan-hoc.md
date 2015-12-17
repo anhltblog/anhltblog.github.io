@@ -52,6 +52,6 @@ Nếu bạn đang tra từ điển tiếng Anh thì chắc sẽ không tìm th�
 
 Những số Emirp đầu tiên được tìm ra là 13, 17, 31, 37, 71, 73, 79, 97, 107, 113, 149, 157,...
 
-k_{n+1}
+$\mathbf{\Sigma}_j$
 
 
