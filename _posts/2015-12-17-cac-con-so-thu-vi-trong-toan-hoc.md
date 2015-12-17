@@ -52,6 +52,18 @@ Nếu bạn đang tra từ điển tiếng Anh thì chắc sẽ không tìm th�
 
 Những số Emirp đầu tiên được tìm ra là 13, 17, 31, 37, 71, 73, 79, 97, 107, 113, 149, 157,...
 
-$$a^2 + b^2 = c^2$$
+###4. Số hoàn hảo
+
+```
+
+Định nghĩa - Số hoàn hảo (Perfect Number) là số có giá trị bằng tổng các ước nguyên dương của nó (tất nhiên là trừ số đó ra).
+
+```
+
+Chẳng hạn, 6 là số hoàn hảo vì: 6 = 1 + 2 + 3.
+
+Về mặt lịch sử, bốn số hoàn hảo đầu tiên (6, 28, 496 và 8128) đã được biết đến từ lâu trong toán học Hy Lạp do nhà toán học Nicomachus tìm ra.
+
+Euclid đã chứng minh rằng $$2^(n-1)(2^n - 1)$$ là một số hoàn hảo khi ***2p - 1*** là số nguyên tố.
 
 
