@@ -28,5 +28,30 @@ Thế kỷ 17, nhà toán học Pháp Fermat tìm ra cặp số thân thiết th
 
 ###2. Cặp số hứa hôn
 
-Không chỉ dừng lại ở mức __**thân thiết**__, tiến thêm một bước nữa, các nhà khoa học bắt đầu định nghĩa __**số hứa hôn**__.
+Không chỉ dừng lại ở mức ***thân thiết***, tiến thêm một bước nữa, các nhà khoa học bắt đầu định nghĩa ***số hứa hôn***.
+
+```
+
+Định nghĩa - Cặp số hứa hôn (Quasiamicable pair) là hai số nguyên dương sao cho tổng các ước của số này (không tính nó) nhiều hơn số kia đúng 1 đơn vị.
+
+```
+
+Những cặp số hứa hôn đầu tiên được tìm ra là (48, 75), (140, 195), (1050, 1925), (1575, 1648), (2024, 2295), (5775, 6128).
+
+Người ta chứng minh được rằng cặp số hứa hôn luôn gồm 1 số chẵn và 1 số lẻ (1 nam 1 nữa, maybe).
+
+###3. Emirp
+
+Nếu bạn đang tra từ điển tiếng Anh thì chắc sẽ không tìm thấy đâu, vì nó là từ viết ngược của ***Prime***. Hiểu nôm na nó là số nguyên tố ngược.
+
+```
+
+Định nghĩa - Emirp là một số nguyên tố mà sau khi đảo ngược vị trí các chữ số của nó, ta lại được một số nguyên tố khác. Định nghĩa này không bao gồm các số nguyên tố viết xuôi ngược như nhau, chẳng hạn 151 hay 787, cũng không phải số nguyên tố chỉ có một chữ số như 5 hay 7.
+
+```
+
+Những số Emirp đầu tiên được tìm ra là 13, 17, 31, 37, 71, 73, 79, 97, 107, 113, 149, 157,...
+
+k_{n+1}
+
 
