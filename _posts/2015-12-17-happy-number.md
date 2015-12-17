@@ -16,6 +16,6 @@ Dạo một vòng trên mạng, tớ bắt gặp một bài khá thú vị nói 
 
 ```
 
-__ Định nghĩa - **Cặp số thân thiết (amicable numbers)** là cặp số tuân theo quy luật: số này bằng tổng tất cả các ước của số kia trừ chính số đó và ngược lại. __
+__ Định nghĩa - **Cặp số thân thiết (amicable numbers)** là cặp __số__ tuân theo quy luật: số này bằng tổng tất cả các ước của số kia trừ chính số đó và ngược lại. __
 
 ```
