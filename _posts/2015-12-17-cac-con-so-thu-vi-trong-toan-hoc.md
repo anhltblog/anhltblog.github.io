@@ -70,7 +70,7 @@ Số nguyên tố có dạng ***2n - 1*** được gọi là số nguyên tố M
 
 ###5. Số mạnh mẽ
 
-```Math
+```
 
 Định nghĩa - Số mạnh mẽ là một số nguyên dương, có tính chất vừa chia hết cho một số nguyên tố p, vừa chia hết cho bình phương của p.
 
