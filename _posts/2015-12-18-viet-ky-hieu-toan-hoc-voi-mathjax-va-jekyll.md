@@ -30,7 +30,7 @@ MathJax là một thư viện Javascript, giúp hiển thị các ký tự toán
 
 ###Dùng MathJax với Jekyll dư lào?
 
-Trước hết là cấu hình.
+#####Cấu hình
 
 * Trong file ```_config.yml```: ```markdown: redcarpet```.
 
@@ -45,3 +45,17 @@ Trước hết là cấu hình.
 ```
 
 Ok, xong.
+
+#####Một số lưu ý
+
+* viết biểu thức trên cùng một dòng: ```$$...$$```.
+
+* viết biểu thức trên một dòng riêng: ```\\(...\\)```
+
+###Một số ký tự hay sử dụng
+
+Bảng dưới đây mô tả một số ký tự hay sử dụng:
+
+| Symbol		| Script 		|
+| ------------- | :-----------: |
+| \\(\alpha\\) 	| \\(\alpha\\)  |
