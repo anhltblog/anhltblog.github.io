@@ -59,4 +59,16 @@ Bảng dưới đây mô tả một số ký tự hay sử dụng:
 | Symbol               | Script          |
 |----------------------|-----------------|
 | \\(\alpha\\)         | \alpha          |
+| \\(A\\)              | \A              |
+| \\(\beta\\)          | \beta           |
+| \\(B\\)              | B               |
+| \\(\gammma\\)        | \gammma         |
+| \\(\Gamma\\)         | \Gamma          |
+| \\(\alpha\\)         | \alpha          |
+| \\(\alpha\\)         | \alpha          |
+| \\(\alpha\\)         | \alpha          |
+| \\(\alpha\\)         | \alpha          |
+| \\(\alpha\\)         | \alpha          |
+| \\(\alpha\\)         | \alpha          |
+| \\(\alpha\\)         | \alpha          |
 
