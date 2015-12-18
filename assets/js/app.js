@@ -12,5 +12,7 @@ $( document ).ready(function() {
 	contact_list.mouseenter(function(){ scontacts.fadeIn(); });
 	
 	contact_list.mouseleave(function(){ scontacts.fadeOut(); });
+	
+	$("table").addClass("table");
 
 });
