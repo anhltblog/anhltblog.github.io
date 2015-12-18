@@ -56,7 +56,6 @@ Ok, xong.
 
 Bảng dưới đây mô tả một số ký tự hay sử dụng:
 
-{: .table .table-striped}
 | Symbol    | Script    |
 |-----------|-----------|
 | xxx       | yyi       |
