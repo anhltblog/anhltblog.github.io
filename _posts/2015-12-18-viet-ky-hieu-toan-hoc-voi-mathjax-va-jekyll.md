@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Viết ký hiệu toán học với MathJax và Jekyll
-categories: [Tips & Tricks]
+categories: [Tips and Tricks]
 tags: [MathJax, Jekyll]
 fullview: false
 comments: true
