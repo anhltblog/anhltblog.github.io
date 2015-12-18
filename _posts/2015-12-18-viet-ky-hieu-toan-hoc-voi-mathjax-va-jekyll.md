@@ -56,6 +56,6 @@ Ok, xong.
 
 Bảng dưới đây mô tả một số ký tự hay sử dụng:
 
-| Symbol		| Script 		|
-| ------------- | ------------- |
-| \\(\alpha\\) 	| \alpha        |
+| Symbol    		| Script 		    |
+| ----------------- | ----------------- |
+| \\(\alpha\\) 	    | \alphas           |
