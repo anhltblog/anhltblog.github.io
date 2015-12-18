@@ -60,4 +60,4 @@ Bảng dưới đây mô tả một số ký tự hay sử dụng:
 
 | ------------- | ------------- |
 
-| \\(\alpha\\) 	| \\(\alpha\\)  |
+| \\(\alpha\\) 	| \alpha  |
