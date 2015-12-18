@@ -13,6 +13,6 @@ $( document ).ready(function() {
 	
 	contact_list.mouseleave(function(){ scontacts.fadeOut(); });
 	
-	$("table").addClass("table-bordered");
+	$("table").addClass("table table-bordered");
 
 });
