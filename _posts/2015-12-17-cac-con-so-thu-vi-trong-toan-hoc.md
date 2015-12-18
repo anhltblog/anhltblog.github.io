@@ -159,6 +159,6 @@ Ví dụ:
 
 * \\(407 = 4^3 + 0^3 + 7^3\\)
 
-Các con số, khi được đặt tên bởi các nhà toán học, chính bản thân họ cũng nhận ra sự phù phiếm của chúng. Nhà toán học Anh, GH Hardy thậm chí đã công bố trong cuốn sách "***Lời xin lỗi của toán học***": "__Đây là những khái niệm kỳ lạ, rất thích hợp cho các cột câu đố và có khả năng để giải trí, nhưng không có gì hấp dẫn đối với các nhà toán học__". Nhưng dẫu sao, bài viết này cũng rất thích hợp với mục đích làm màu của tớ.
+Các con số, khi được đặt tên bởi các nhà toán học, chính bản thân họ cũng nhận ra sự phù phiếm của chúng. Nhà toán học Anh, GH Hardy thậm chí đã công bố trong cuốn sách "***Lời xin lỗi của toán học***": "_Đây là những khái niệm kỳ lạ, rất thích hợp cho các cột câu đố và có khả năng để giải trí, nhưng không có gì hấp dẫn đối với các nhà toán học_". Nhưng dẫu sao, bài viết này cũng rất thích hợp với mục đích làm màu của tớ.
 
 <div align="center"><img src="https://cloud.githubusercontent.com/assets/5568988/11865676/247687b0-a4d8-11e5-994e-408c3baed778.PNG"></div>
