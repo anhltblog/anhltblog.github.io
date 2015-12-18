@@ -62,13 +62,23 @@ Bảng dưới đây mô tả một số ký tự hay sử dụng:
 | \\(A\\)              | \A              |
 | \\(\beta\\)          | \beta           |
 | \\(B\\)              | B               |
-| \\(\gammma\\)        | \gammma         |
+| \\(\gamma\\)         | \gamma          |
 | \\(\Gamma\\)         | \Gamma          |
-| \\(\alpha\\)         | \alpha          |
-| \\(\alpha\\)         | \alpha          |
-| \\(\alpha\\)         | \alpha          |
-| \\(\alpha\\)         | \alpha          |
-| \\(\alpha\\)         | \alpha          |
-| \\(\alpha\\)         | \alpha          |
-| \\(\alpha\\)         | \alpha          |
+| \\(\pi\\)         | \pi          |
+| \\(\Pi\\)         | \Pi          |
+| \\(\phi\\)         | \phi          |
+| \\(\Phi\\)         | \Phi          |
+| \\(\varphi\\)         | \varphi          |
+| \\(\theta\\)         | \theta          |
+| \\(k_{n+1}\\)         | k_{n+1}          |
+| \\(\theta\\)         | \theta          |
+| \\(\theta\\)         | \theta          |
+| \\(\theta\\)         | \theta          |
+| \\(\theta\\)         | \theta          |
+| \\(\theta\\)         | \theta          |
+| \\(\theta\\)         | \theta          |
+| \\(\theta\\)         | \theta          |
+| \\(\theta\\)         | \theta          |
+| \\(\theta\\)         | \theta          |
+
 
