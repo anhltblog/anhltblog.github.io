@@ -70,10 +70,97 @@ Số nguyên tố có dạng ***2n - 1*** được gọi là số nguyên tố M
 
 ###5. Số mạnh mẽ
 
+```Math
+
+Định nghĩa - Số mạnh mẽ là một số nguyên dương, có tính chất vừa chia hết cho một số nguyên tố p, vừa chia hết cho bình phương của p.
+
 ```
 
-Định nghĩa - Số mạnh mẽ là một số nguyên dương, có tính chất vừa chia hết cho một số nguyên tố p, vừa chia hết cho bình phương của số nguyên tố p, tức \\(p^2\\).
+Chẳng hạn, 25 là số mạnh mẽ, vì 25 vừa chia hết cho 5, vừa chia hết cho \\(5^2\\).
+
+Sau đây là danh sách các số mạnh mẽ nằm giữa 1 và 1000: 1, 4, 8, 9, 16, 25, 27, 32, 36, 49, 64, 72, 81, 100, 108, 121, 125, 128, 144, 169, 196, 200, 216, 225, 243, 256, 288, 289, 324, 343, 361, 392, 400, 432, 441, 484, 500, 512, 529, 576, 625, 648, 675, 676, 729, 784, 800, 841, 864, 900, 961, 968, 972, 1000.
+
+###6. Số kì quặc
+
+Để hiểu được số kì quặc là gì, trước hết ta cần biết hai định nghĩa: ***số phong phú*** và ***số bán hoàn hảo***.
 
 ```
 
+Định nghĩa - Số phong phú (Abundant number) là các số mà tổng các ước số của số đó (không kể chính nó) lớn hơn số đó.
 
+```
+
+Ví dụ, 12 có tổng các ước (không kể 12) là **1 + 2 + 3 + 4 + 6 = 16 > 12**. Do đó 12 là một số phong phú.
+
+```
+
+Định nghĩa - Số bán hoàn hảo (Semiperfect number) là một số tự nhiên có giá trị bằng tổng tất cả hoặc một số ước của nó.
+
+```
+
+Như vậy, tập số bán hoàn hảo rộng hơn tập số hoàn hảo. Một số số bán hoàn hảo: 6, 12, 18, 20, 24, 28, 30, 36, 40,...
+
+```
+
+Vậy còn ***số kì quặc*** là gì?
+
+```
+
+Định nghĩa - Số kì quặc (Weird number) là một số phong phú, nhưng không phải là số bán hoàn hảo. Nói cách khác, tổng các ước của nó là lớn hơn nó, nhưng tổng của tất cả hoặc một số ước không bao giờ bằng số đó.
+
+```
+
+Vài số đầu tiên trong tập hợp số kì quặc là: 70, 836, 4030, 5830...
+
+###3. Số hạnh phúc
+
+Một ***số hạnh phúc*** được xác định bằng quy trình sau đây:
+
+Bắt đầu với một số nguyên dương bất kỳ, thay thế bằng tổng các bình phương các chữ số của nó, và lặp lại quá trình cho đến khi xuất hiện số 1, hoặc bị lặp vô hạn trong một chu kì mà không có số 1.
+
+Những số mà quá trình kết thúc bằng số 1 là những số hạnh phúc (Happy Number), còn những số khác gọi là số không hạnh phúc (Sad Number).
+
+Hãy cùng thử với số 44:
+
+* Thứ nhất, \\(4^2 + 4^2  = 32\\)
+* Tiếp theo, \\(3^2 + 2^2 = 13\\)
+* Và một lần nữa, \\(1^2 + 3^2 = 10\\)
+* Cuối cùng, \\(1^2 + 0^2 = 1\\)
+
+44 là một số hạnh phúc.
+
+Điều thú vị là số hạnh phúc rất phổ biến, có đến 143 số từ 0 đến 1000. Và số hạnh phúc lớn nhất với không có chữ số nào lặp lại là ***986 543 210***. Đó là một số hạnh phúc thực sự.
+
+###8. Số bất khả xâm phạm
+
+```
+
+Định nghĩa - Số bất khả xâm phạm (Untouchable Number) là số không thể viết dưới dạng tổng tất cả các ước của một số nguyên dương bất kỳ (không tính số nguyên dương đó).
+
+```
+
+Chẳng hạn, 4 không phải là một số bất khả xâm phạm, vì **4 = 3 + 1**. Mà 3 và 1 là tất cả các ước của 9 (không kể 9). Còn 5 là số bất khả xâm phạm vì không thể biểu diễn 5 dưới dạng tổng của tất cả các ước của một số nguyên dương nào.
+
+Các số bất khả xâm phạm đầu tiên là: 2, 5, 52, 88, 96, 120, 124, 146, 162, 188, 206, 210, 216, 238, 246, 248, 262, 268, 276, 288, 290,...
+
+###9. Số tự mãn
+
+```
+
+Định nghĩa - Số tự mãn (Narcissistic Number) là số bằng tổng các lập phương của tất cả các chữ số của nó.
+
+```
+
+Ví dụ:
+
+* \\(153 = 1^3 + 5^3 + 3^3\\)
+
+* \\(370 = 3^3 + 7^3 + 0^3\\)
+
+* \\(371 = 3^3 + 7^3 + 1^3\\)
+
+* \\(407 = 4^3 + 0^3 + 7^3\\)
+
+Các con số, khi được đặt tên bởi các nhà toán học, chính bản thân họ cũng nhận ra sự phù phiếm của chúng. Nhà toán học Anh, GH Hardy thậm chí đã công bố trong cuốn sách "***Lời xin lỗi của toán học***": "___Đây là những khái niệm kỳ lạ, rất thích hợp cho các cột câu đố và có khả năng để giải trí, nhưng không có gì hấp dẫn đối với các nhà toán học___". Nhưng dẫu sao, bài viết này cũng rất thích hợp với mục đích làm màu của tớ.
+
+<div align="center"><img src="https://cloud.githubusercontent.com/assets/5568988/11865676/247687b0-a4d8-11e5-994e-408c3baed778.PNG"></div>
