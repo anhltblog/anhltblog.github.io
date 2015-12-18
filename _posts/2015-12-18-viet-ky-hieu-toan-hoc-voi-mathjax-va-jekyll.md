@@ -24,4 +24,24 @@ $$\int_0^\infty \mathrm{e}^{-x}\,\mathrm{d}x$$
 
 Ok, đã có MathJax. Sau đây tớ sẽ tóm tắt cách sử dụng MathJax để làm cho blog của bạn thật đẹp, thật lung linh, thật rực rỡ.
 
+###MathJax là cái gì vậy?
 
+MathJax là một thư viện Javascript, giúp hiển thị các ký tự toán học trên browser. Bạn có thể xem chi tiết tại [trang chủ](https://www.mathjax.org/).
+
+###Dùng MathJax với Jekyll dư lào?
+
+Trước hết là cấu hình.
+
+* Trong file ```_config.yml```: ```markdown: redcarpet```.
+
+* Để load MathJax, thêm đoạn sau vào file ```default.html``` (trong folder ```layouts```)
+
+```javascript
+
+<script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+```
+
+Ok, xong.
