@@ -184,6 +184,6 @@ ul.dropdown-menu>li>a>i.fa {
 }
 
 table{
-  @extend .table;
+  @extend .table .table-striped;
 }
 
