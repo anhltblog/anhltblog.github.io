@@ -64,7 +64,7 @@ Chẳng hạn, 6 là số hoàn hảo vì: 6 = 1 + 2 + 3.
 
 Về mặt lịch sử, bốn số hoàn hảo đầu tiên (6, 28, 496 và 8128) đã được biết đến từ lâu trong toán học Hy Lạp do nhà toán học Nicomachus tìm ra.
 
-Euclid đã chứng minh rằng $$2^{n-1}(2^n - 1)$$ là một số hoàn hảo khi ***2p - 1*** là số nguyên tố.
+Euclid đã chứng minh rằng $2^{n-1}(2^n - 1)$ là một số hoàn hảo khi ***2p - 1*** là số nguyên tố.
 
 Số nguyên tố có dạng ***2n - 1*** được gọi là số nguyên tố Mersenne, lấy theo tên của 17 tu sĩ Marin Mersenne, những người nghiên cứu lý thuyết số và số hoàn hảo. Đến thế kỷ 18, Leonhard Euler đã chứng minh: "Mỗi số nguyên tố Mersenne tạo ra một số hoàn hảo, và ngược lại, mỗi số hoàn hảo tương ứng với một số Mersenne". Kết quả này thường được gọi là định lý Euclid-Euler.
 
