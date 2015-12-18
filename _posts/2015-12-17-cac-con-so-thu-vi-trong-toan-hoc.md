@@ -100,8 +100,6 @@ Ví dụ, 12 có tổng các ước (không kể 12) là **1 + 2 + 3 + 4 + 6 = 1
 
 Như vậy, tập số bán hoàn hảo rộng hơn tập số hoàn hảo. Một số số bán hoàn hảo: 6, 12, 18, 20, 24, 28, 30, 36, 40,...
 
-```
-
 Vậy còn ***số kì quặc*** là gì?
 
 ```
